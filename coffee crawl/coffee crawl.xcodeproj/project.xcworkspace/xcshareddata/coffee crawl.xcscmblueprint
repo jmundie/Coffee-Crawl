@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E5827B822DEB86FDE2C9E83CA70108D9ABAF69D9" : 9223372036854775807,
+    "9D1C56AFA647734238377903D2B4F769D89F3BBF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2C9DE074-E683-4FAB-A935-3D67CBDC3B46",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E5827B822DEB86FDE2C9E83CA70108D9ABAF69D9" : "",
+    "9D1C56AFA647734238377903D2B4F769D89F3BBF" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "coffee crawl",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "coffee crawl.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jmundie\/Udemy-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9D1C56AFA647734238377903D2B4F769D89F3BBF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jmundie\/Coffee-Crawl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E5827B822DEB86FDE2C9E83CA70108D9ABAF69D9"
+    }
+  ]
+}

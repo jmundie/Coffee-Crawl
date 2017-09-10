@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oqc-dj-dSl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coffee_crawl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,9 +23,105 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Dpm-y3-hRp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OMU-Mb-jNX">
+                            <connections>
+                                <segue destination="hzR-af-kQW" kind="show" id="rbf-gr-bpl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-162" y="226"/>
+        </scene>
+        <!--Shop View Controller-->
+        <scene sceneID="Wh3-wR-0nY">
+            <objects>
+                <viewController id="hzR-af-kQW" customClass="ShopViewController" customModule="coffee_crawl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cyj-zc-OKz"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Rz-S9-RyV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1jQ-7C-lbE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LatteArt101Ad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="n5N-jV-2xf">
+                                <rect key="frame" x="47.5" y="84" width="280" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="esC-N4-sCq"/>
+                                    <constraint firstAttribute="height" constant="150" id="zJI-dO-T8q"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coffee Shop Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqu-eQ-C78">
+                                <rect key="frame" x="47" y="257" width="280" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfQ-a3-g8a">
+                                <rect key="frame" x="171" y="314" width="32" height="30"/>
+                                <state key="normal" title="ADD"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="hzR-af-kQW" eventType="touchUpInside" id="Oj8-ar-AcO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uqu-eQ-C78" firstAttribute="top" secondItem="n5N-jV-2xf" secondAttribute="bottom" constant="23" id="1XS-cv-0O2"/>
+                            <constraint firstItem="uqu-eQ-C78" firstAttribute="centerX" secondItem="1jQ-7C-lbE" secondAttribute="centerX" id="85j-c9-U8d"/>
+                            <constraint firstItem="dfQ-a3-g8a" firstAttribute="centerX" secondItem="1jQ-7C-lbE" secondAttribute="centerX" id="9Ec-lc-ohM"/>
+                            <constraint firstItem="dfQ-a3-g8a" firstAttribute="top" secondItem="uqu-eQ-C78" secondAttribute="bottom" constant="27" id="BP4-7G-Vty"/>
+                            <constraint firstItem="n5N-jV-2xf" firstAttribute="top" secondItem="cyj-zc-OKz" secondAttribute="bottom" constant="20" id="JBz-Yy-qSW"/>
+                            <constraint firstItem="n5N-jV-2xf" firstAttribute="centerX" secondItem="1jQ-7C-lbE" secondAttribute="centerX" id="S6t-BT-HhY"/>
+                            <constraint firstItem="uqu-eQ-C78" firstAttribute="width" secondItem="n5N-jV-2xf" secondAttribute="width" id="buo-Ed-Sd4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BFn-oc-icg">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="YOi-F9-LZn">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="hzR-af-kQW" id="0eK-c9-vMw"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="mqs-oV-gG3">
+                                <connections>
+                                    <action selector="photosTapped:" destination="hzR-af-kQW" id="CoB-GO-uaq"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="shopImageView" destination="n5N-jV-2xf" id="cMa-nE-tYQ"/>
+                        <outlet property="shopTextField" destination="uqu-eQ-C78" id="h1E-q6-PKR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NnY-6A-2Ze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653.60000000000002" y="224.4377811094453"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aCo-ma-8ar">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oqc-dj-dSl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yYH-la-dtn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="m6s-Hl-G3C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWf-b9-Pdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.40000000000001" y="-543.77811094452773"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LatteArt101Ad.jpg" width="750" height="600"/>
+    </resources>
 </document>

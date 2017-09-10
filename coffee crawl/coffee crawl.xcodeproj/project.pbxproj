@@ -13,6 +13,8 @@
 		F1B693421F65DDD000BEAD69 /* coffee_crawl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1B693401F65DDD000BEAD69 /* coffee_crawl.xcdatamodeld */; };
 		F1B693441F65DDD000BEAD69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B693431F65DDD000BEAD69 /* Assets.xcassets */; };
 		F1B693471F65DDD000BEAD69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B693451F65DDD000BEAD69 /* LaunchScreen.storyboard */; };
+		F1B6934F1F65E27B00BEAD69 /* LatteArt101Ad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1B6934E1F65E27B00BEAD69 /* LatteArt101Ad.jpg */; };
+		F1B693511F65E39000BEAD69 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B693501F65E39000BEAD69 /* ShopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F1B693431F65DDD000BEAD69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1B693461F65DDD000BEAD69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1B693481F65DDD000BEAD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B6934E1F65E27B00BEAD69 /* LatteArt101Ad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LatteArt101Ad.jpg; sourceTree = "<group>"; };
+		F1B693501F65E39000BEAD69 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		F1B693381F65DDD000BEAD69 /* coffee crawl */ = {
 			isa = PBXGroup;
 			children = (
+				F1B6934E1F65E27B00BEAD69 /* LatteArt101Ad.jpg */,
 				F1B693391F65DDD000BEAD69 /* AppDelegate.swift */,
 				F1B6933B1F65DDD000BEAD69 /* ViewController.swift */,
+				F1B693501F65E39000BEAD69 /* ShopViewController.swift */,
 				F1B6933D1F65DDD000BEAD69 /* Main.storyboard */,
 				F1B693431F65DDD000BEAD69 /* Assets.xcassets */,
 				F1B693451F65DDD000BEAD69 /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B6934F1F65E27B00BEAD69 /* LatteArt101Ad.jpg in Resources */,
 				F1B693471F65DDD000BEAD69 /* LaunchScreen.storyboard in Resources */,
 				F1B693441F65DDD000BEAD69 /* Assets.xcassets in Resources */,
 				F1B6933F1F65DDD000BEAD69 /* Main.storyboard in Resources */,
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B693511F65E39000BEAD69 /* ShopViewController.swift in Sources */,
 				F1B693421F65DDD000BEAD69 /* coffee_crawl.xcdatamodeld in Sources */,
 				F1B6933C1F65DDD000BEAD69 /* ViewController.swift in Sources */,
 				F1B6933A1F65DDD000BEAD69 /* AppDelegate.swift in Sources */,
