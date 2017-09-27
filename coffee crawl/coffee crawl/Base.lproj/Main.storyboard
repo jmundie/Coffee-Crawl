@@ -1,127 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oqc-dj-dSl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XGa-oM-aub">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Coffee Crawl Collection-->
+        <scene sceneID="NdJ-K8-fC0">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coffee_crawl" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="50b-8j-gCb" customClass="ShopTableViewController" customModule="Coffee_Crawl" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RYt-ED-XuE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Dpm-y3-hRp">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OMU-Mb-jNX">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="uNN-yt-S05">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uNN-yt-S05" id="l7g-hz-IeQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="50b-8j-gCb" id="Lua-6S-XUr"/>
+                            <outlet property="delegate" destination="50b-8j-gCb" id="TWz-Kz-feu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Coffee Crawl Collection" id="s07-0J-CFp">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fBM-kC-GQR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="a2t-ya-GI0">
                             <connections>
-                                <segue destination="hzR-af-kQW" kind="show" id="rbf-gr-bpl"/>
+                                <segue destination="NNh-br-Z3U" kind="show" id="Zxf-nG-FDO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMG-gU-KZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162" y="226"/>
+            <point key="canvasLocation" x="577" y="50"/>
         </scene>
-        <!--Shop View Controller-->
-        <scene sceneID="Wh3-wR-0nY">
+        <!--Add Shop View Controller-->
+        <scene sceneID="seZ-5x-1FG">
             <objects>
-                <viewController id="hzR-af-kQW" customClass="ShopViewController" customModule="coffee_crawl" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cyj-zc-OKz"/>
-                        <viewControllerLayoutGuide type="bottom" id="9Rz-S9-RyV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1jQ-7C-lbE">
+                <viewController id="NNh-br-Z3U" customClass="AddShopViewController" customModule="Coffee_Crawl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ed-P5-vjE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LatteArt101Ad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="n5N-jV-2xf">
-                                <rect key="frame" x="47.5" y="84" width="280" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LatteArt101Ad" translatesAutoresizingMaskIntoConstraints="NO" id="xLM-Fg-rLX">
+                                <rect key="frame" x="20" y="84" width="335" height="209.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="esC-N4-sCq"/>
-                                    <constraint firstAttribute="height" constant="150" id="zJI-dO-T8q"/>
+                                    <constraint firstAttribute="width" secondItem="xLM-Fg-rLX" secondAttribute="height" multiplier="8:5" id="6ce-3N-poT"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coffee Shop Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqu-eQ-C78">
-                                <rect key="frame" x="47" y="257" width="280" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coffee Shop Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHO-cG-FQl">
+                                <rect key="frame" x="20" y="313.5" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfQ-a3-g8a">
-                                <rect key="frame" x="171" y="314" width="32" height="30"/>
-                                <state key="normal" title="ADD"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbj-IY-a1I">
+                                <rect key="frame" x="20" y="363.5" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
-                                    <action selector="addButtonTapped:" destination="hzR-af-kQW" eventType="touchUpInside" id="Oj8-ar-AcO"/>
+                                    <action selector="addTapped:" destination="NNh-br-Z3U" eventType="touchUpInside" id="75t-39-lQN"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uqu-eQ-C78" firstAttribute="top" secondItem="n5N-jV-2xf" secondAttribute="bottom" constant="23" id="1XS-cv-0O2"/>
-                            <constraint firstItem="uqu-eQ-C78" firstAttribute="centerX" secondItem="1jQ-7C-lbE" secondAttribute="centerX" id="85j-c9-U8d"/>
-                            <constraint firstItem="dfQ-a3-g8a" firstAttribute="centerX" secondItem="1jQ-7C-lbE" secondAttribute="centerX" id="9Ec-lc-ohM"/>
-                            <constraint firstItem="dfQ-a3-g8a" firstAttribute="top" secondItem="uqu-eQ-C78" secondAttribute="bottom" constant="27" id="BP4-7G-Vty"/>
-                            <constraint firstItem="n5N-jV-2xf" firstAttribute="top" secondItem="cyj-zc-OKz" secondAttribute="bottom" constant="20" id="JBz-Yy-qSW"/>
-                            <constraint firstItem="n5N-jV-2xf" firstAttribute="centerX" secondItem="1jQ-7C-lbE" secondAttribute="centerX" id="S6t-BT-HhY"/>
-                            <constraint firstItem="uqu-eQ-C78" firstAttribute="width" secondItem="n5N-jV-2xf" secondAttribute="width" id="buo-Ed-Sd4"/>
+                            <constraint firstItem="XHO-cG-FQl" firstAttribute="leading" secondItem="cs1-pV-JQY" secondAttribute="leading" constant="20" id="8aw-bH-2cx"/>
+                            <constraint firstItem="xLM-Fg-rLX" firstAttribute="top" secondItem="cs1-pV-JQY" secondAttribute="top" constant="20" id="Bc2-2J-zV9"/>
+                            <constraint firstItem="cs1-pV-JQY" firstAttribute="trailing" secondItem="fbj-IY-a1I" secondAttribute="trailing" constant="20" id="Dgm-aB-sD1"/>
+                            <constraint firstItem="cs1-pV-JQY" firstAttribute="trailing" secondItem="xLM-Fg-rLX" secondAttribute="trailing" constant="20" id="EbK-mh-NRm"/>
+                            <constraint firstItem="fbj-IY-a1I" firstAttribute="leading" secondItem="cs1-pV-JQY" secondAttribute="leading" constant="20" id="GrD-5s-Dxs"/>
+                            <constraint firstItem="cs1-pV-JQY" firstAttribute="trailing" secondItem="XHO-cG-FQl" secondAttribute="trailing" constant="20" id="a0I-OA-hgh"/>
+                            <constraint firstItem="XHO-cG-FQl" firstAttribute="width" secondItem="xLM-Fg-rLX" secondAttribute="width" id="b7M-cT-9HG"/>
+                            <constraint firstItem="fbj-IY-a1I" firstAttribute="top" secondItem="XHO-cG-FQl" secondAttribute="bottom" constant="20" id="ciy-E7-l3r"/>
+                            <constraint firstItem="fbj-IY-a1I" firstAttribute="top" secondItem="XHO-cG-FQl" secondAttribute="bottom" constant="20" id="iLy-59-UpH"/>
+                            <constraint firstItem="xLM-Fg-rLX" firstAttribute="leading" secondItem="cs1-pV-JQY" secondAttribute="leading" constant="20" id="p5d-1s-Mc2"/>
+                            <constraint firstItem="XHO-cG-FQl" firstAttribute="top" secondItem="xLM-Fg-rLX" secondAttribute="bottom" constant="20" id="xyu-sy-kOj"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="cs1-pV-JQY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BFn-oc-icg">
+                    <navigationItem key="navigationItem" id="6EW-QK-gmy">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="YOi-F9-LZn">
+                            <barButtonItem systemItem="camera" id="glB-8b-wSc">
                                 <connections>
-                                    <action selector="cameraTapped:" destination="hzR-af-kQW" id="0eK-c9-vMw"/>
+                                    <action selector="cameraTapped:" destination="NNh-br-Z3U" id="p6X-Gs-qJH"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Photos" id="mqs-oV-gG3">
+                            <barButtonItem systemItem="organize" id="01m-ow-BQO">
                                 <connections>
-                                    <action selector="photosTapped:" destination="hzR-af-kQW" id="CoB-GO-uaq"/>
+                                    <action selector="photosTapped:" destination="NNh-br-Z3U" id="fzN-CJ-ndj"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="shopImageView" destination="n5N-jV-2xf" id="cMa-nE-tYQ"/>
-                        <outlet property="shopTextField" destination="uqu-eQ-C78" id="h1E-q6-PKR"/>
+                        <outlet property="itemImageView" destination="xLM-Fg-rLX" id="VmS-3M-TQo"/>
+                        <outlet property="titleTextField" destination="XHO-cG-FQl" id="Jq3-u8-Hl8"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NnY-6A-2Ze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxN-om-f81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653.60000000000002" y="224.4377811094453"/>
+            <point key="canvasLocation" x="1532" y="75"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="aCo-ma-8ar">
+        <scene sceneID="XkR-IX-qeP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oqc-dj-dSl" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yYH-la-dtn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <navigationController id="XGa-oM-aub" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cFy-6w-EA7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="m6s-Hl-G3C"/>
+                        <segue destination="50b-8j-gCb" kind="relationship" relationship="rootViewController" id="hem-JD-DAc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KWf-b9-Pdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLA-bX-iGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162.40000000000001" y="-543.77811094452773"/>
+            <point key="canvasLocation" x="-375" y="50"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LatteArt101Ad.jpg" width="750" height="600"/>
+        <image name="LatteArt101Ad" width="750" height="600"/>
     </resources>
 </document>
